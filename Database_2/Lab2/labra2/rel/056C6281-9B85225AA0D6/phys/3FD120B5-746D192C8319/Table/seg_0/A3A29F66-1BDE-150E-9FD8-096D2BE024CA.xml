@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CLIENT" directorySegmentName="seg_0" id="A3A29F66-1BDE-150E-9FD8-096D2BE024CA">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:32 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<schemaObject>68FF5E4C-A020-2D32-FB2E-C76F0ACD710A</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>CBA95658-FD8D-0C9C-CCAC-0E585A7DC4C6</segment>
+<tableSpace>A12E684C-8F59-DB51-DD3A-FBEC1338003F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CPHONE" id="353D6576-CD27-9E81-DC37-DB4AD80D6EC9">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLNAME" id="8239D341-FEE9-A36B-FD8D-48BB338AF6D6">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CEMAIL" id="A4BF6A1C-FBE2-0E85-90D1-2279A82C7B6E">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CFNAME" id="B35942A3-2BD2-558D-9E6D-5DDEA5A1C976">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLIENTID" id="D09B5682-7A5B-AF53-651F-03CC6FD2EC9B">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CTITLE" id="EEE0EF93-D970-235C-6395-ACB1BD432450">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CADDR" id="F8D25A2E-F7F9-0473-5850-A7934957FC5F">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CLIENT_PK" id="0C818DFA-CEEE-4744-A1D6-B47AA3787B2C">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:35 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<schemaObject>68FF5E4C-A020-2D32-FB2E-C76F0ACD710A</schemaObject>
+<segment>7BA3AFBB-B5A7-6DC5-9306-6A907EB034F1</segment>
+<tableSpace>A12E684C-8F59-DB51-DD3A-FBEC1338003F</tableSpace>
+<indexSegment>7BA3AFBB-B5A7-6DC5-9306-6A907EB034F1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

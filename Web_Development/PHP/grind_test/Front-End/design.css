@@ -1,0 +1,499 @@
+body {
+	background-color: lightgreen;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+    
+}
+
+/* -----------------Navigation Bar ---------------------*/
+
+#navbar {
+	overflow: hidden;
+	background-color: rgb(28, 138, 67);
+	/* Make navbar to be on top of everything */
+	position: fixed;
+	z-index: 1000;
+	height: 57px;
+	width: 100%;
+	top: 0;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+#navbar a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 16px 30px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+    text-shadow: .5px .5px black;
+    border: 2px black;
+     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+#navbar #logo {
+	height: 60px;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+#navbar a:hover {
+  background-color: lightgreen;
+  color: black;
+    text-shadow: .5px .5px rgb(28, 138, 67) ;
+}
+
+
+#navbar-right {
+	float: right;
+}
+
+/* ---------------------Home Page----------------------- */
+
+.container {
+	padding: 20px;
+}
+
+.row:after {
+	content: "";
+    display: table;
+    clear: both
+}
+
+.leftSideTop {
+	float: left;
+	width: 34%;
+	padding: 20px;
+	text-align: center;
+	font-size: 2vw;
+}
+
+.rightSideTop {
+	float: left;
+	width: 66%;
+	padding: 20px;
+}
+
+.leftSideMiddle {
+	float: left;
+	width: 34%;
+	padding: 20px;
+	background-color: #d3f8d3;
+	border-radius: 5px;
+	padding-bottom: 110px;
+	padding-top: 117px;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: lightgreen;
+}
+
+.rightSideMiddle {
+	float: left;
+	width: 66%;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #bcf5bc;
+	border-style: solid;
+	border-width: 1px;
+	border-color: lightgreen;
+}
+
+.tutors {
+	text-align: center;
+}
+
+.bottom {
+	float: left;
+	width: 50%;
+	padding: 20px;
+	text-align: center;
+	background-color: #d3f8d3;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: lightgreen;
+}
+
+#roundedImage {
+	border-radius: 50%;
+}
+/*----------------------SearchTutor------------*/
+#searchImage {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+	border-radius: 50%;
+}
+.tutorInfo{
+    width: 100%;    
+}
+.tutorTable {
+		width: 100%;
+		border-collapse: collapse;    
+}
+.tInfo{
+	background: rgb(234, 244, 246);
+}
+
+.contacttd{
+	background: lightgreen;
+}
+
+.contactbutton {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+    width: 100px;
+    height: 100px;
+	border-radius: 5px;
+}
+/*----------------------Slideshow------------*/
+
+.mySlides {
+	display: none;
+}
+
+#students {
+	vertical-align: middle;
+	display: block;
+	height: auto;
+	max-width: 100%;
+	/* Same height as smallest image's height */
+	max-height: 480px; 
+	border-radius: 5px;
+}
+
+
+.slideshowContainer {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* --------About-------- */
+
+.aboutText{ 
+	text-align: center;
+	font-size: 2vw;
+}
+
+.descImg { 
+	text-align: center;
+}
+
+.aboutHeader {
+	text-align: center;
+	padding: 10px ;
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.aboutBody{
+	font-size: 2vw;
+	text-align: center;
+}
+
+#roundedImage2 {
+	border-radius: 10%;	
+}
+
+/*-----------------Search Form on Home Page-----------------*/
+
+select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* ----------------Login Page----------------------- */
+
+.tutorLogin { 
+	background-color: #bcf5bc;
+	border-radius: 5px;
+	float: left;
+	width: 50%;
+	border-style: solid;
+	border-color: lightgreen;
+}
+
+.studentLogin { 
+	grid-area: student;
+	background-color: #d3f8d3;
+	border-radius: 5px;
+	text-align: left;
+	float: left;
+	width: 50%;
+	border-style: solid;
+	border-color: lightgreen;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=date], input[type=number]{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+button{
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 5px;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.topcontainer {
+	background-color: #4CAF50;
+	border-radius: 5px;
+	color: white;
+	padding: 2px;
+	font-size: 2vw;
+    text-shadow: .5px .5px black;
+}
+
+.bottomcontainer {
+	padding: 30px;
+	background-color:#f1f1f1; 
+	text-align: center;
+	border-radius: 5px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 15px;
+	color: blue;
+}
+
+.psw a {
+	float: right;
+}
+
+span.reg {
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#remember {
+	font-size: 15px;
+}
+
+#login {
+	text-align: center;
+}
+
+.content {
+	margin: 5% auto 15% auto;
+	width: 80%;
+	text-align: left;
+}
+
+/*----------------Registration Page---------------------*/
+
+.topReg {
+	background-color: rgb(234, 244, 246);
+	text-align: center;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 2vw;
+}
+
+.register {
+	padding: 20px;
+	background-color: #bcf5bc;
+	border-radius: 5px;
+	text-align: center;
+	width: 50%;
+	float: left;
+	border-style: solid;
+	border-color: lightgreen;
+}
+
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+/* The Modal (background) */
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4);
+	padding-top: 60px;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto; 
+	border: 1px solid #888;
+	width: 80%; 
+	text-align: left;
+	padding: 20px;
+}
+
+/* The Close Button (x) */
+
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+/*------------Profile Page-----------------*/
+
+.fakeimg {
+	height:200px;
+	background-color: #aaa;
+	width: 100%;
+	padding: 20px;
+}
+
+ *{
+  box-sizing: border-box;
+}
+
+.leftcolumn {
+	float: left;
+	width: 25%;
+}
+
+.rightcolumn {
+	float: left;
+	width: 75%;
+	padding-left: 20px;
+}
+
+.card {
+	background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   border-radius: 5px;
+}

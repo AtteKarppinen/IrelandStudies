@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="CC8CBC01-880F-7B65-4756-DB5BF1731FF6">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:20:57 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

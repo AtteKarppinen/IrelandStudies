@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ACCOUNTTYPE" directorySegmentName="seg_0" id="D252E3F8-43DD-6842-FEDA-32E9C9E08601">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:32 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<schemaObject>68FF5E4C-A020-2D32-FB2E-C76F0ACD710A</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>CBA95658-FD8D-0C9C-CCAC-0E585A7DC4C6</segment>
+<tableSpace>A12E684C-8F59-DB51-DD3A-FBEC1338003F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EXPIRYDATE" id="01607250-181B-0272-2CDF-6D83D28F2E2D">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATEINTRODUCED" id="44FAFA1B-35A0-3CBB-AB68-3A0D1E74396C">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACTYPE" id="95C60A20-E2AF-4E42-B15C-1C30EAFF38EC">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCTYPEDESC" id="E552D534-1AD0-104C-1422-72EF6A57435C">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ACCOUNTTYPE_PK" id="80AE7C66-1FDF-CAA1-B87A-208A99BC31D6">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:35 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<schemaObject>68FF5E4C-A020-2D32-FB2E-C76F0ACD710A</schemaObject>
+<segment>7BA3AFBB-B5A7-6DC5-9306-6A907EB034F1</segment>
+<tableSpace>A12E684C-8F59-DB51-DD3A-FBEC1338003F</tableSpace>
+<indexSegment>7BA3AFBB-B5A7-6DC5-9306-6A907EB034F1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

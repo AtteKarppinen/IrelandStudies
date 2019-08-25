@@ -1,0 +1,36 @@
+Terminology:
+
+plaintext       = original message
+ciphertext      = coded message
+cipher          = algorithm for encryption
+key             = info used in cipher
+encipher        = converting plaintext to ciphertext
+decipher        = vice versa
+cryptoanalysis  = study of principles / methods of deciphering without knowing key
+cryptology      = field of both cryptography and cryptoanalysis
+
+Encryption
+
+Symmetric
+    Or conventional / private-key / single-key
+    Sender and receiver share the same key
+
+Asymmetric
+    or two-key / public-key 
+
+Unconditional security
+    Unbreakable cipher. No matter how much computing power
+    or time given. Ciphertext provides insufficient infro
+    to uniquely determine the corresponding plaintext.
+
+Computational security
+    Given limited computing resources, cipher is Unbreakable.
+    E.g. universe's time will end before cipher is cracked.
+
+
+Playfair example
+    plaintext   = come to the window
+    key         = SHERLOCK
+
+    S   H   E   R   L
+    O   C   K   

@@ -1,0 +1,7 @@
+
+list of likely words    common_list
+empty list              dec_list
+
+while decoding, check for common words, add to dec_list:
+    if at least three matches, assume it's the correct key :
+        print decrpytion

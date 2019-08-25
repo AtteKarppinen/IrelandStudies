@@ -1,0 +1,66 @@
+.Styling {
+  padding: 5%;
+  /* If content gets out of border auto will make it scrollable */
+  overflow: auto;
+  font-size: large;
+}
+
+div.Container {
+  /* This is just box to hold Left and Right */
+  height: 90%;
+  border: 1px solid;
+  display: flex;
+  background-color: black;
+  /* Next line will stretch Left and Right to match the height */
+  align-items: stretch;
+  /* Put little shadows outside of the "paper" */
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+div.Container[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+    /* Center container and everything with it */
+    margin: 0 auto;
+}
+
+div.Left {
+  /* Creative and Professional Left/Right classes
+  will override any declarations with same names */
+  width: 30%;
+  background-color: LightGray;
+  text-align: center;
+}
+
+div.Right {
+  width: 55%;
+  background-color: DarkGray;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  width: 33%;
+  height: 50px;
+  text-align: center;
+}
+
+h3 {
+  /* Gets rid of padding/margin */
+  display: inline;
+}
+
+hr {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.rounded {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+}

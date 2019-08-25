@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SecondApp</string>
+    <string name="btn_text">Click me!</string>
+    <string name="btn_clicked">The user clicked the button!</string>
+    <string name="desc_text">This app demonstrates adding a button to the user interface
+    and responding to user clicks.</string>
+</resources>

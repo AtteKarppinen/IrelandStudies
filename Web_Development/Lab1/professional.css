@@ -1,0 +1,22 @@
+.Professional {
+  font-style: oblique;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+.Professional.Left {
+  background-color: #292929;
+  background-image: url("resources/bgProfessional.jpg");
+  color: white;
+}
+
+.Professional.Right {
+  background-color: #FBFBFB;
+  background-image: url("resources/bgProfessional1.jpg");
+  color: black;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid white;
+}

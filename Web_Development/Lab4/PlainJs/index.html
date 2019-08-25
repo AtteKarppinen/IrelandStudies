@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation Exercise Plain Js</title>
+<style>
+	body{
+		font-size: 10pt;
+		font-family: Verdana, Helvetica, sans-serif;
+		color: #003300;
+	}
+	h1{
+		font-size: 12pt;
+		text-align: center;
+	}
+	p{
+		margin: 0px 40px 20px 40px
+	}
+	td{
+		padding: 5px;
+	}
+	td.name{
+		text-align: right;
+	}
+	td.data{
+		text-align: left;
+	}
+</style>
+
+
+</head>
+<body>
+
+<h1>Personal Information</h1>
+<form name="personal_info" id="personal_info" onsubmit="return validateForm()">
+<table align="center" border="0">
+<tbody><tr>
+	<td class="name">
+		Name:
+	</td>
+	<td class="data">
+		<!-- Accept also most common symbols found in names -->
+		<input type="text" name="name_text" id="name_text" width="20" maxlength="40" size="20" pattern="^[A-Za-zÀ-ÿ ,.'-]+$" required>
+	</td>
+</tr>
+<tr>
+	<td class="name">
+		E-mail address:
+	</td>
+	<td class="data">
+		<input type="text" name="email_text" id="email_text" width="20" maxlength="40" size="20" required>
+	</td>
+</tr>
+<tr>
+	<td class="name">
+		Date of Birth (DD/MM/YYYY):
+	</td>
+	<td class="data">
+		<input type="text" name="day_text" id="day_text" maxlength="2" size="2" required>/
+		<input type="text" name="month_text" id="month_text" maxlength="2" size="2"required>/
+		<input type="text" name="year_text" id="year_text" maxlength="4" size="4" required>
+	</td>
+</tr>
+<tr>
+	<td class="name">
+		Gender:
+	</td>
+	<td class="data">
+		<select name="select_gender" id="select_gender" required>
+			<option value="">Select gender</option> 
+			<option value="F">Female</option>
+			<option value="M">Male</option>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td class="name">
+		Street address (line 1):
+	</td>
+	<td class="data">
+		<input type="text" name="addr1_text" id="addr1_text" width="6" size="6" maxlength="5" required>
+	</td>
+</tr>
+<tr>
+	<td class="name">
+		Street address (line 2):
+	</td>
+	<td class="data">
+		<input type="text" name="addr2_text" id="addr2_text" width="6" size="6" maxlength="5" required>
+	</td>
+</tr>
+<tr>
+	<td class="name">
+		City:
+	</td>
+	<td class="data">
+		<input type="text" name="city_text" id="city_text" width="6" size="6" maxlength="5" pattern="^[A-Za-z]+$" title="Only letters allowed" required>
+	</td>
+</tr>
+<tr>
+	<td class="name">
+		ZIP code:
+	</td>
+	<td class="data">
+		<input type="text" name="zip_text" id="zip_text" width="6" size="6" maxlength="5" pattern="\w+\s\d+" title="At least one letter, space and numbers" required>
+	</td>
+</tr>
+<tr>
+	<td class="name">
+		<input type="submit" value="Submit">
+	</td>
+	<td class="data">
+		<input type="reset" value="Clear">
+	</td>
+</tr>
+</tbody></table>
+</form>
+
+<script>
+
+	function validateForm() {
+        let email   = document.getElementById('email_text').value;
+        let day     = document.getElementById('day_text').value;
+        let month   = document.getElementById('month_text').value;
+		let year    = document.getElementById('year_text').value;
+		let date 	= day + "/" + month + "/" + year;
+
+		// Validate email
+		if (!validateEmail(email)) {
+			return false;
+		}
+
+		// Validate DoB
+		if (!validateDate(date)) {
+			return false;
+		}
+	}
+
+
+	function isLeapYear(year) {
+		return_value = true;
+
+	// There is no leap year if the year is not divisible by 4
+		if ((year % 4) != 0)
+			return_value = false;
+
+	// There is no leap year if the year is divisible by 100 but not 400
+		else if (((year % 100) == 0) & ((year % 400) != 0))
+			return_value = false;
+		
+		return return_value;
+    }
+
+	function validateEmail(email) {
+		// Validate email
+		if (/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/.test(email)) {
+			return true;
+		} else {
+			alert("Please make sure e-mail is in a correct form\nE.g. Example@Address.com");
+			return false;
+		}
+	}
+
+	function validateDate(date) {
+		// regular expression to match required date format
+		let dateFormat = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/;
+		let validData = true;
+		let months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+		let today = new Date();
+		// parts: day, month, year
+		let parts = date.split('/');
+		let dob = new Date(parts[2], parts[1], parts[0]);
+
+		if (isLeapYear(parts[2])) {
+			months[1] = 29;
+		} else {
+			months[1] = 28;
+		}
+
+		if (date != '') {
+			if (date.match(dateFormat)) {
+				// check that days won't exceed the month limit
+				if (parts[0] > months[parts[1] - 1]) {
+					alert("Invalid value for day: " + parts[0]);
+					validData = false;
+				}
+				
+				// month value between 1 and 12
+				if (parts[1] < 1 || parts[1] > 12) {
+					alert("Invalid value for month: " + parts[1]);
+					validData = false;
+				}
+
+				// year value between 1890 and 2018
+				if (parts[2] < 1890 || parts[2] > (new Date()).getFullYear()) {
+					alert("Invalid value for year: " + parts[2] + " - must be between 1890 and " + (new Date()).getFullYear());
+					validData = false;
+				}
+
+				// don't accept date from future
+				if (today <= dob) {
+					alert("Date cannot be in the future");
+					validData = false;
+				}
+			} 
+			else {
+				alert("Invalid date format: " + date);
+				validData = false;
+			}
+		}
+		return validData;
+	}
+
+</script>
+</body>
+</html>

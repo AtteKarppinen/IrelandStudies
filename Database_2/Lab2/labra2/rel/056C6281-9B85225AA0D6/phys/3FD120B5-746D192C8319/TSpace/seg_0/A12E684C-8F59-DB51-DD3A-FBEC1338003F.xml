@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSpaceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableSpaceOraclev10g" name="DT2282" directorySegmentName="seg_0" id="A12E684C-8F59-DB51-DD3A-FBEC1338003F">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>AKARPPINEN</sourceObjSchema>
+<sourceObjName>DT2282</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:32 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<emUniformSize>0</emUniformSize>
+<extentManagement>LOCAL</extentManagement>
+</TableSpaceOraclev10g>

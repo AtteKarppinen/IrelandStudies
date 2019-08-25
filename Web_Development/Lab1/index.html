@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- ALL THE UNECESSARY FIDDLING MIGHT SERVE MYSELF LATER AS AN EXAMPLE -->
+<html style="height: 100%;">
+  <head>
+    <!-- styles.css is for universal styles.
+    Professional and Creative changes how the page looks -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="creative.css">
+    <!-- <link rel="stylesheet" href="professional.css"> -->
+    <title>CV - Lab 1</title>
+  </head>
+
+  <!-- Change class here: Styling, Styling Creative, Styling Professional -->
+  <body onload="identifier()" class="Styling Creative" id="doc">
+
+    <script src="logic.js"></script>
+
+    <div class="Container" size="A4">
+      <!-- The left side includes: Contact info, Education, Recommenders -->
+      <div class="Styling Left" id="divLeft">
+
+        <img src="resources/meNormal.png" class="rounded" id="meImg" style="text-align: center;"/>
+
+        <div style="word-break: break-all;">
+          <h2>CONTACT INFO</h2>
+          <p>John Doe</p>
+          <p>JohnDoe@gmail.com</p>
+          <p>+35 044 055 066 98</p>
+          <p>example.com</p>
+        </div> <hr>
+
+        <h2>EDUCATION</h2>
+        <table>
+          <tr>
+            <th>Education</th>
+            <th>Year</th>
+            <th>Grade</th>
+          </tr>
+          <tr>
+            <td>Software developer</td>
+            <td>TBA</td>
+            <td>TBA</td>
+          </tr>
+        </table> <hr>
+
+        <h2>REFERENCES</h2>
+        <ul style="text-align: left;">
+          <li>One</li>
+          <li>Can</li>
+          <li>Hope</li>
+        </ul>
+      </div>
+
+      <!-- The right side includes: Experience, Projects etc -->
+      <div class="Styling Right" id="divRight">
+
+        <div style="text-align: center;">
+          <a href="http://www.dit.ie/" target="_blank">
+            <img src="resources/DITNormal.jpg" alt="It's-a-me" class="rounded" id="ditImg">
+          </a>
+          <h1>Curriculum Vitae</h1>
+        </div>
+
+        <div>
+          <h2>Summary</h2>
+          <p>Introduction text that tells very generously about me and bit of my Interests.<p>
+          <p>This paragraph focus more on my skills as a programmer and what I would like to do in the future.<p>
+        </div>
+
+        <!-- Lists -->
+        <div>
+          <ul style="display: inline;">
+            <li><h3>Jobs and responsibilities</h3>
+              <ul>
+                <li>I worked for this company for a while</li>
+                <li>And for this one for a little longer</li><br>
+              </ul>
+            </li>
+            <li><h3>Projects:</h3>
+              <ol>
+                <li>Amateur project</li>
+                <li>Intermediate project</li>
+                <li>Pro project</li><br>
+              </ol>
+            </li>
+            <li><h3>Technologies</h3>
+              <ul>
+                <li>Just the most important</li>
+                <li>Technologies that I know</li><br>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Links to old schools -->
+        <div>
+          <h3>Old schools:</h3><br>
+          <a href="https://www.oamk.fi/en/" target="_blank">Link to Oulu University of Applied Sciences</a> <br>
+          <a href="https://peda.net/raahe/raahen-lukio" target="_blank">Link to my old upper secondary school</a> <br/>
+          <a href="https://peda.net/raahe/peruskoulut/pattasten-koulu" target="_blank">Link to my old junior high school</a> <br>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

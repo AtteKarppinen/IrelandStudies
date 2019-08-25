@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="AKARPPINEN" directorySegmentName="seg_0" id="68FF5E4C-A020-2D32-FB2E-C76F0ACD710A">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:32 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+</SchemaObject>

@@ -1,0 +1,11 @@
+cd /Student_Distrib/DT228/DT228-3/CSP/SocketFiles
+
+cp Practical.h DieWithMessage.o ~/Documents/csp/
+
+
+
+gcc -c -std=gnu99 daytimeclient.c
+gcc -o daytimeclient daytimeclient.o DieWithMessage.o
+
+./daytimeclient 127.0.0.1 <port number>
+

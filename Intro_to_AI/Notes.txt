@@ -1,0 +1,27 @@
+EXAM QUESTIONS
+
+1.
+	-Architecture of rule based expert system
+	-Forward and backward-chaining
+	-Interference engine strategies
+
+2.
+	-Sources of uncertain knowledge
+	-Bayesian reasoning
+	-Certainty factors
+
+3.
+	-Write code, basic rules
+	-Syntax
+	-Russian dolls
+
+4.
+	-PERCEPTRON
+	-Linear separability
+	-Single perceptron training algorithm
+	-Multilayer perceptron concept
+	-Overtraining AI
+
+5.
+	-No 8-puzzle? Probably Farmer-wolf
+	-Search strategies (depth-first etc)

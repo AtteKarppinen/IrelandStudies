@@ -1,0 +1,10 @@
+1.
+	-Access and restriction
+	-SQL
+	-MongoDB
+
+2.
+	-Normalization
+
+3./4.
+	-PL/SQL

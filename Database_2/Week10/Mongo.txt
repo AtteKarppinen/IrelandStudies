@@ -1,0 +1,40 @@
+db.customers.insert({
+    "name": "John Doe",
+    "email": "John@Doe.com"
+})
+
+db.customers.insert({
+    "name": "John Skater",
+    "email": "John@Skater.com",
+    "shoe_size": 45
+})
+
+db.customers.insert({
+    "name": "Jane Skater",
+    "email": "Jane@Skater.com",
+    "shoe_size": 43
+})
+
+db.skating_on_ice.insert({
+    "price": "20€",
+    "attendees": [{
+        "user_id": ObjectId("5bf567c4e670adcfd398716d")
+    }]
+})
+
+db.skating_on_ice.update(
+    { "price": "20€" }, 
+    {$push: {"attendees": { "user_id":ObjectId("5bf56f26e670adcfd398716f") }}}
+)
+
+db.skating_on_ice.insert({
+    "attendees": [{
+        "user_id": ObjectId("5bf56f26e670adcfd398716f")
+    }]
+})
+
+db.skating_on_ice.find( {}, {"user_id": 1} )
+
+db.skating_on_ice.find( {}, {"user_id": 1} ).foreach(function(doc) {
+    db.customers.find( {"_id": })
+})

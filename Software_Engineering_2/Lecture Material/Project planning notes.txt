@@ -1,0 +1,21 @@
+Project proposing document
+
+Is about delivering the product
+
+TECHNICAL
+
+-Feasibility study
+-Requirements
+	-Research
+-System specification
+-Dev
+-Testing
+-System integrating
+-Beta release
+
+
+NON-TECHNICAL
+
+-Is there a market for it
+-What is the value of the product
+(not just money)

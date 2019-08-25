@@ -1,0 +1,20 @@
+1. Copy file:
+	cp <fileToBeCopied> <copyName>
+	
+2. Change dir:
+	cd /<dir>
+
+3. Create dir:
+	mkdir <dir>
+
+4. mv Readme.txt ../../dist
+	moves text file to dist directory (first it goes down two directories)
+
+5. mv Readme.txt Documents/ OR mv Readme.txt /Documents
+	First one moves the file...
+
+6. Nano create file
+	nano <fileName> (creates it in the current dir)
+
+7. Nano: open file, edit and save   
+	nano <fileName> 'write stuff' + ctrl+O

@@ -1,0 +1,157 @@
+.Styling {
+  font-size: large;
+  /* If content gets out of border auto will make it scrollable */
+  overflow: auto;
+  padding: 5%;
+}
+
+div.Container {
+  /* This is just box to hold Left and Right */
+  /* With box-sizing, height will be exact 90%,
+  not 90% + border (1px). Nitpicking but it is what it is  */
+  box-sizing: border-box;
+  height: 90%;
+  border: 1px solid;
+  display: flex;
+  background-color: black;
+  /* Next line will stretch Left and Right to match the height */
+  align-items: stretch;
+  /* Put little shadows outside of the "paper" */
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+div.Container[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+  /* Center container and everything with it */
+  margin: 0 auto;
+}
+
+div.Left {
+  /* Creative and Professional Left/Right classes
+  will override any declarations with same names */
+  width: 30%;
+  background-color: LightGray;
+  text-align: center;
+}
+
+div.Right {
+  width: 55%;
+  background-color: DarkGray;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  height: 50px;
+  text-align: center;
+  width: 33%;
+}
+
+h3 {
+  /* Gets rid of padding/margin */
+  display: inline;
+}
+
+hr {
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.rounded {
+  border-radius: 50%;
+  height: 250px;
+  margin: 0 auto;
+  width: 250px;
+}
+
+#btn {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: 2px #F08080;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  transition-duration: 0.3s;
+}
+
+#btn:hover {
+  background-color: #F08080;
+  border: 2px red;
+}
+
+p#p1, p#p2, p#p3 {
+  margin: 0;
+}
+
+/* All image sizes are hardcoded to match better the CV size */
+/* space indicates descendant of. So all images under div will be affected */
+#bigPic {
+  width: 793px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+#bigPic, #thumbnails {
+  display: flex;
+  justify-content: center;
+}
+
+#thumbnails {
+  width: 793px;
+  margin: 0 auto;
+}
+
+#thumbnails img {
+  height: 130px;
+  margin: 3px;
+  width: 260px;
+}
+
+.questions {
+  margin-top: 52%;
+}
+
+.questions p {
+  float: left;
+  margin: 0;
+  width: 110px;
+}
+
+.time p {
+  color: black;
+  font-size: xx-large;
+  width: fit-content;
+  margin: auto;
+  margin-top: 5%;
+}
+
+body{
+  font-size: 10pt;
+  font-family: Verdana, Helvetica, sans-serif;
+  color: #003300;
+}
+h1{
+  font-size: 12pt;
+  text-align: center;
+}
+p{
+  margin: 0px 40px 20px 40px
+}
+td{
+  padding: 5px;
+}
+td.name{
+  text-align: right;
+}
+td.data{
+  text-align: left;
+}
+
+form {
+  align-content: left;
+}

@@ -1,0 +1,3 @@
+connect dt2nn3_c7/DT2NN3_C7
+create table t3(cl varchar(30))
+grantselect on t3 to ckellysoc

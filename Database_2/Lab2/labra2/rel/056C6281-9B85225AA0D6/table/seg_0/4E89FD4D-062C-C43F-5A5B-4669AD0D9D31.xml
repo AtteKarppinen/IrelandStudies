@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E89FD4D-062C-C43F-5A5B-4669AD0D9D31" schemaObject="68FF5E4C-A020-2D32-FB2E-C76F0ACD710A" name="HASACCOUNT">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>AKARPPINEN</sourceObjSchema>
+<sourceObjName>HASACCOUNT</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:32 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLIENTID" id="FFCB0F02-3091-0140-6A46-995D70265D10">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>HASACCOUNT</sourceObjSchema>
+<sourceObjName>CLIENTID</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,7,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06472DDE-67E5-D886-7447-22CC8E3C035F" referredColumn="D09B5682-7A5B-AF53-651F-03CC6FD2EC9B"/>
+</associations>
+</Column>
+<Column name="ACCNO" id="FBE18C1A-3341-F63E-07F6-10FFDE7200BA">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>HASACCOUNT</sourceObjSchema>
+<sourceObjName>ACCNO</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7C7B6C1-11EF-03BD-5D8B-06DFE75F8D02" referredColumn="A94430F5-1F51-6F6D-C749-DA4264E690A5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2DC043D9-420B-09FD-CC76-09AF2E5DA5DE" schemaObject="68FF5E4C-A020-2D32-FB2E-C76F0ACD710A" name="HASACCOUNT_PK">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>AKARPPINEN</sourceObjSchema>
+<sourceObjName>SYS_C001280149</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFCB0F02-3091-0140-6A46-995D70265D10"/>
+<colUsage columnID="FBE18C1A-3341-F63E-07F6-10FFDE7200BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22F7C00F-FAFB-319E-6DE0-408FE34CE410" name="SYS_C001280150">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:35 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFCB0F02-3091-0140-6A46-995D70265D10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29CA10D6-8D86-183C-7B93-B5797C69680B" name="SYS_C001280151">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:35 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBE18C1A-3341-F63E-07F6-10FFDE7200BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

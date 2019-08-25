@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A3A29F66-1BDE-150E-9FD8-096D2BE024CA" schemaObject="68FF5E4C-A020-2D32-FB2E-C76F0ACD710A" name="CLIENT">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>AKARPPINEN</sourceObjSchema>
+<sourceObjName>CLIENT</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:32 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLIENTID" id="D09B5682-7A5B-AF53-651F-03CC6FD2EC9B">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>CLIENT</sourceObjSchema>
+<sourceObjName>CLIENTID</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,7,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CTITLE" id="EEE0EF93-D970-235C-6395-ACB1BD432450">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>CLIENT</sourceObjSchema>
+<sourceObjName>CTITLE</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CFNAME" id="B35942A3-2BD2-558D-9E6D-5DDEA5A1C976">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>CLIENT</sourceObjSchema>
+<sourceObjName>CFNAME</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLNAME" id="8239D341-FEE9-A36B-FD8D-48BB338AF6D6">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>CLIENT</sourceObjSchema>
+<sourceObjName>CLNAME</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CADDR" id="F8D25A2E-F7F9-0473-5850-A7934957FC5F">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>CLIENT</sourceObjSchema>
+<sourceObjName>CADDR</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEMAIL" id="A4BF6A1C-FBE2-0E85-90D1-2279A82C7B6E">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>CLIENT</sourceObjSchema>
+<sourceObjName>CEMAIL</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPHONE" id="353D6576-CD27-9E81-DC37-DB4AD80D6EC9">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>CLIENT</sourceObjSchema>
+<sourceObjName>CPHONE</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,15,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0C818DFA-CEEE-4744-A1D6-B47AA3787B2C" schemaObject="68FF5E4C-A020-2D32-FB2E-C76F0ACD710A" name="CLIENT_PK">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>AKARPPINEN</sourceObjSchema>
+<sourceObjName>SYS_C001280143</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D09B5682-7A5B-AF53-651F-03CC6FD2EC9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

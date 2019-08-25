@@ -1,0 +1,10 @@
+iterative_solve(State, Depth, Solution) :-			NextDepth is Depth + 1,
+													iterative_solve(State, NextDepth, Solution).
+
+iterative_solve(State, Path, Depth, Solution) :-	Depth > 0,										% Don't allow negative depth
+													move(State, NextState),			
+													not(member(NextState, Path)),
+													LastDepth is Depth - 1,
+													iterative_solve(NextState, [State|Path], LastDepth, Solution).
+
+rivi 137

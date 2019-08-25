@@ -1,0 +1,12 @@
+telnet aspmx.l.google.com 25
+HELO apollo.ict.ad.dit.ie
+MAIL FROM: <d18123298@mydit.ie>
+RCPT TO: <d18123298@mydit.ie>
+DATA
+From: DITBOT@dit.ie
+To: d18123298@mydit.ie
+Subject: Junk Mail
+
+This message has been originated for shits and giggles.
+.
+QUIT

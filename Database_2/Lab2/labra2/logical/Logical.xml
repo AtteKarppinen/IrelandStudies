@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="604FCCD4-D562-244E-872C-E5DE187DB7F6" mainViewID="24EB6411-D45C-0AB6-06EB-5CF619F98E31">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:20:56 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

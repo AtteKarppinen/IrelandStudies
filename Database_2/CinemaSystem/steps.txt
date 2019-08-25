@@ -1,0 +1,67 @@
+connect dt2nn3_b7/DT2NN3_B7;
+
+GRANT ALL ON movies TO JHIETA;
+GRANT ALL ON viewings TO JHIETA;
+GRANT ALL ON customers TO JHIETA;
+GRANT ALL ON sales TO JHIETA;
+GRANT ALL ON screens TO JHIETA;
+
+GRANT ALL ON movies TO AKARPPINEN;
+GRANT ALL ON viewings TO AKARPPINEN;
+GRANT ALL ON customers TO AKARPPINEN;
+GRANT ALL ON sales TO AKARPPINEN;
+GRANT ALL ON screens TO AKARPPINEN;
+
+drop table movies cascade constraint;
+drop table viewings cascade constraint;
+drop table customers cascade constraint;
+drop table sales cascade constraint;
+drop table screens cascade constraint;
+
+create table movies
+(
+    movie_id INT NOT NULL,
+    movie_name VARCHAR(30) NOT NULL,
+    movie_duration VARCHAR(30) NOT NULL,
+    rating DEC,
+    start_time DEC,
+    screen_number INT NOT NULL,
+    primary key(movie_id)
+);
+
+create table viewings
+(
+    Viewing_id INT NOT NULL,
+    movie_id INT NOT NULL,
+    screen_number INT NOT NULL,
+    primary key(viewing_id),
+    foreign key(movie_id) references movies
+);
+
+create table customers
+(
+    customer_id INT NOT NULL,
+    customer_name VARCHAR(30) NOT NULL,
+    card_number NUMBER NOT NULL,
+    primary key(customer_id)
+);
+
+create table sales
+(
+    sale_id INT NOT NULL,
+    sale_date TIMESTAMP NOT NULL,
+    ticket_amount INT NOT NULL,
+    seating_type VARCHAR(30) NOT NULL,
+    card_number NUMBER,
+    movie_id INT NOT NULL,
+    customer_id INT NOT NULL,
+    primary key(sale_id),
+    foreign key(movie_id) references movies
+);
+
+create table screens
+(
+    screen_number INT NOT NULL,
+    capacity INT NOT NULL,
+    primary key(screen_number)
+);

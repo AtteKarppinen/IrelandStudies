@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="361A6950-7276-4E02-3FA1-04EEE344B7EF" schemaObject="68FF5E4C-A020-2D32-FB2E-C76F0ACD710A" name="ACCOUNT">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>AKARPPINEN</sourceObjSchema>
+<sourceObjName>ACCOUNT</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:32 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ACCNO" id="A94430F5-1F51-6F6D-C749-DA4264E690A5">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>ACCNO</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:33 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATEOPENED" id="56F46B2D-4EAE-41B5-4C6C-1A0B3305A92E">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>DATEOPENED</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:33 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATEMODIFIED" id="070E1B2A-5872-CB35-F694-DB02A938B016">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>DATEMODIFIED</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:33 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BALANCE" id="CCCA4994-0F79-FBDB-43F6-964E286EA9A2">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>BALANCE</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:33 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTYPE" id="DFDB68A9-5A7E-B4EA-5ADA-7408F5A3E74D">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>ACTYPE</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:33 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="74F4E259-128E-D152-1996-D9C147898A29" referredColumn="95C60A20-E2AF-4E42-B15C-1C30EAFF38EC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="67950E0E-A4ED-F59A-B505-83B6E6D8CE03" schemaObject="68FF5E4C-A020-2D32-FB2E-C76F0ACD710A" name="ACCOUNT_PK">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>AKARPPINEN</sourceObjSchema>
+<sourceObjName>SYS_C001280145</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A94430F5-1F51-6F6D-C749-DA4264E690A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D962D84-C30C-59D5-CF09-1C2DE1C362B9" name="SYS_C001280146">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:35 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFDB68A9-5A7E-B4EA-5ADA-7408F5A3E74D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

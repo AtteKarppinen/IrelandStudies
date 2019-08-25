@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E7A6020E-431C-0723-32EF-DBA596CBA0EB" containerWithKeyObject="2820A3B6-FD81-9852-94DF-ADA4E326048A" localFKIndex="390A469B-019E-E20A-10B0-28AC013DFBAB" name="SYS_C001280157">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>AKARPPINEN</sourceObjSchema>
+<sourceObjName>SYS_C001280157</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:35 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<referredTableLongName>AKARPPINEN.ACCOUNT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>361A6950-7276-4E02-3FA1-04EEE344B7EF</referredTableID>
+<keyObject>67950E0E-A4ED-F59A-B505-83B6E6D8CE03</keyObject>
+<referredKeyID>67950E0E-A4ED-F59A-B505-83B6E6D8CE03</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ACCNO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

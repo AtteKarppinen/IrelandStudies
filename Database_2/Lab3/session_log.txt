@@ -1,0 +1,13 @@
+(User A) 
+GRANT SELECT ON student TO JHIETA;
+GRANT UPDATE (studentname) ON student TO JHIETA;
+
+Permissions succesfully granted to user JHIETA.
+JHIETA can only update column 'studentname'.
+
+UPDATE student 
+SET studentname = 'John Doe'
+WHERE studentname LIKE 'Joe Bloggs';
+
+(User A & B)
+SELECT * FROM STUDENT;

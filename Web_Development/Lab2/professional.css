@@ -1,0 +1,31 @@
+.External {
+  font-style: oblique;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+.External.Left {
+  background-color: #292929;
+  background-image: url("resources/bgProfessional.jpg");
+  color: white;
+}
+
+.External.Right {
+  background-color: #FBFBFB;
+  background-image: url("resources/bgProfessional1.jpg");
+  color: black;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+/* Change images using CSS */
+.rounded#meImg {
+  content: url("resources/meProfessional.png");
+}
+
+.rounded#ditImg {
+  content: url("resources/DITProfessional.jpg");
+}

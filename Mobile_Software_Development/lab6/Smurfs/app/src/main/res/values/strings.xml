@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">The Smurfs</string>
+    <string name="title_activity_details">Biography</string>
+    <string name="gotcha">Got It!</string>
+    <string name="instructions">Click Photo to Learn More!</string>
+    <string name="hefty">Hefty</string>
+    <string name="jokey">Jokey</string>
+    <string name="nerdy">Nerdy</string>
+    <string name="papa">Papa</string>
+</resources>

@@ -1,0 +1,41 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.img-circle {
+  /* Tie image size to resizable div */
+  max-height: 250px;
+  max-width: 250px;
+  height: 100%;
+  width: 100%;
+}
+
+.img-rounded {
+  height: 400px;
+  width: 400px;
+}
+
+.carousel {
+  background-color: rgb(209, 206, 224);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.carousel .item {
+  /* This prevents carousel to affect page size even without image */
+  min-height: 400px;
+}
+
+.carousel .item img {
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  color: rgb(17, 240, 47);
+}
+
+.carousel-caption p {
+  color: rgb(17, 240, 47);
+}

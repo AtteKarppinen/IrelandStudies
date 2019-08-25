@@ -1,0 +1,21 @@
+.Creative {
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  background-image: url("resources/bgCreative.jpg");
+  background-size: cover;
+}
+
+.Creative.Left {
+  background-color: LightBlue;
+  background-image: linear-gradient(to bottom right, #00BFFF, #7FFFD4);
+}
+
+.Creative.Right {
+  background-color: Green;
+  background-image: linear-gradient(to bottom left, #228B22, #ADFF2F);
+}
+
+table, th, td {
+  border: 1px solid black;
+}

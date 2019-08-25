@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2820A3B6-FD81-9852-94DF-ADA4E326048A" schemaObject="68FF5E4C-A020-2D32-FB2E-C76F0ACD710A" name="TRANSACTION">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>AKARPPINEN</sourceObjSchema>
+<sourceObjName>TRANSACTION</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:32 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ACCNO" id="D628E0C0-3943-5D9F-BAA3-09E71127F106">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>TRANSACTION</sourceObjSchema>
+<sourceObjName>ACCNO</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7A6020E-431C-0723-32EF-DBA596CBA0EB" referredColumn="A94430F5-1F51-6F6D-C749-DA4264E690A5"/>
+</associations>
+</Column>
+<Column name="TXDATE" id="B9FD835C-5162-6254-0CEB-019530C692BA">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>TRANSACTION</sourceObjSchema>
+<sourceObjName>TXDATE</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TXTYPE" id="86254E2C-14D7-5EBB-E074-B09BED68493F">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>TRANSACTION</sourceObjSchema>
+<sourceObjName>TXTYPE</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<constraintName>SYS_C001280155</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;D&apos;" description=""/>
+<valueDef value="&apos;W&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TXAMOUNT" id="550E92E2-24A9-D032-835A-14EB230D3844">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>TRANSACTION</sourceObjSchema>
+<sourceObjName>TXAMOUNT</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C03DE3A6-CAEC-CB48-1CEB-6ACF6BE537B3" schemaObject="68FF5E4C-A020-2D32-FB2E-C76F0ACD710A" name="TRANSACTION_PK">
+<sourceConnName>DB2</sourceConnName>
+<sourceObjSchema>AKARPPINEN</sourceObjSchema>
+<sourceObjName>SYS_C001280156</sourceObjName>
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:34 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D628E0C0-3943-5D9F-BAA3-09E71127F106"/>
+<colUsage columnID="B9FD835C-5162-6254-0CEB-019530C692BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="390A469B-019E-E20A-10B0-28AC013DFBAB" name="SYS_C001280157">
+<createdBy>atte</createdBy>
+<createdTime>2018-09-26 12:21:35 UTC</createdTime>
+<ownerDesignName>labra2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D628E0C0-3943-5D9F-BAA3-09E71127F106"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

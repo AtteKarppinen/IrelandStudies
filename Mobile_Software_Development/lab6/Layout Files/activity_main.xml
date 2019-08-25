@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/smurf_group"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/jokey"
+            android:onClick="selectSmurf"
+            android:text="@string/jokey"
+            android:textSize="@dimen/medium_text"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/hefty"
+            android:onClick="selectSmurf"
+            android:text="@string/hefty"
+            android:textSize="@dimen/medium_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/nerdy"
+            android:onClick="selectSmurf"
+            android:text="@string/nerdy"
+            android:textSize="@dimen/medium_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/papa"
+            android:onClick="selectSmurf"
+            android:text="@string/papa"
+            android:textSize="@dimen/medium_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/smurf"
+        android:onClick="onClickSmurfImage"
+        android:src="@drawable/jokey"
+        android:background="@null"
+        android:tooltipText="@string/instructions"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:text="@string/instructions"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

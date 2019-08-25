@@ -1,0 +1,21 @@
+Atte Karppinen D18123298
+
+Possibility 1: Insufficient funds
+
+Incoming movie request from the client:
+MOVIE_REQUEST: 10
+
+Insufficient balance: 0 . Incoming top-up request
+TOP_UP: 20
+
+Balance updated! Current balance is: 20
+
+
+
+Possibility 2: Sufficient funds
+
+Incoming movie request from the client: 
+MOVIE_REQUEST: 10
+
+
+Movie rent granted. Final balance: 20

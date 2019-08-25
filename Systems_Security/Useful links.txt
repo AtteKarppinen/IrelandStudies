@@ -1,0 +1,13 @@
+Do's and Don'ts of writing crypto code
+https://hackernoon.com/dosanddontsofcryptocode-bd36cf28910a
+
+Mistakes
+    Buffering copy without checking the input size (classic buffer overflow)
+    Accessing buffer with incorrect length value
+    Rolling your own crypto
+    Incorrectly calculating the buffer size
+    Improper validation of array index
+    Uncontrolled format string
+    Integer overflow or wraparound
+    Ignoring compiler warnings
+    

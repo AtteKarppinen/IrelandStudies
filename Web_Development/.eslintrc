@@ -1,0 +1,24 @@
+{
+  // Use AirBnB configuration
+  // "extends": "eslint-config-airbnb-base",
+  "env": {
+    // Don't require declaration, like document
+    "browser": true
+  },
+  // Allow altering properties
+  "rules": {
+    // Allow altering parameter values:
+    "no-param-reassign": 0,
+    // Allow + opertor when making strings:
+    "prefer-template": 0,
+    // Allow alert usage:
+    "no-alert": 0,
+    // Allow undefined and unused functions (when using library):
+    "no-undef": 0,
+    "no-unused-vars": 0,
+    "camelcase": 0,
+    "indent": 0,
+    "brace-style": 0,
+    "linebreak-style": 0
+  }
+}

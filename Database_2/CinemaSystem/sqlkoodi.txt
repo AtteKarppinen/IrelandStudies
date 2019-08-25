@@ -1,0 +1,35 @@
+drop table movies;
+drop table viewings;
+drop table customers;
+drop table sales;
+
+create table movies
+(movie_id INT NOT NULL,
+movie_name VARCHAR NOT NULL,
+movie_duration VARCHAR NOT NULL,
+rating DEC,
+start_time DEC,
+screen_number INT NOT NULL,
+);
+
+create table viewings
+(Viewing_id INT NOT NULL,
+movie_id INT NOT NULL,
+screen_number INT NOT NULL,
+);
+
+create table customers(
+customer_id INT NOT NULL,
+customer_name VARCHAR NOT NULL,
+card_number NUMBER NOT NULL,
+);
+
+create table sales(
+sale_id INT NOT NULL,
+sale_date TIMESTAMP NOT NULL,
+ticket_amount INT NOT NULL,
+seating_type VARCHAR NOT NULL,
+card_number NUMBER,
+movie_id INT NOT NULL,
+customer_id INT NOT NULL,
+);
